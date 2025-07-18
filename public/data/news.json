@@ -1,55 +1,21 @@
 {
-  "last_updated": "2025-07-18 08:39:10",
+  "last_updated": "2025-07-18 09:18:50",
   "news": [
     {
-      "title": "英国宣布13亿美元计划大幅提升AI算力",
-      "summary": "英国将投资13亿美元提升全国AI算力，建立超算网络支持医学和科研。",
-      "link": "https://www.reuters.com/world/uk/britain-boosts-computing-power-13-billion-ai-drive-2025-07-17/"
+      "title": "OpenAI发布GPT-5预览",
+      "summary": "OpenAI推出下一代大模型GPT-5，支持多模态推理。",
+      "link": "https://example.com/gpt-5",
+      "locale": "intl",
+      "time": "2025-07-18T09:30:00Z",
+      "image": "https://placehold.co/600x300?text=GPT-5"
     },
     {
-      "title": "英国上线Isambard‑AI超算助力健康与农业",
-      "summary": "英国新建AI超算Isambard‑AI，应用涵盖牛奶病识别、皮肤癌检测等。",
-      "link": "https://www.theguardian.com/technology/2025/jul/17/ai-supercomputer-isambard-bristol-launches"
-    },
-    {
-      "title": "圣何塞市长推AI办公 助提升公务效率",
-      "summary": "市长提倡7000名公务员使用AI工具，获批训练1000人提升效率。",
-      "link": "https://nypost.com/2025/07/17/us-news/san-jose-mayor-matt-mahan-wants-city-workers-to-use-ai/"
-    },
-    {
-      "title": "Perplexity CEO：用AI取代“末日刷屏”",
-      "summary": "CEO建议用AI学习替代刷社媒时间，否则面临职业边缘化。",
-      "link": "https://www.businessinsider.com/doom-scrolling-use-ai-perplexity-ceo-jobs-aravind-srinivas-2025-7"
-    },
-    {
-      "title": "Nvidia：AI将改变而非取代工作",
-      "summary": "黄仁勋认为AI将重塑岗位，提高能力，而非大规模裁员。",
-      "link": "https://www.businessinsider.com/ai-will-redefine-jobs-not-replace-them-nvidia-ceo-huang-2025-7"
-    },
-    {
-      "title": "美政府推AI战税两用 系统扩大部署",
-      "summary": "美政府推AI应用于军事、税务、空管等领域，强化部署。",
-      "link": "https://www.washingtonpost.com/business/2025/07/14/trump-ai-government-war-taxes-jobs/"
-    },
-    {
-      "title": "德国出台AI战略目标2030产值达10%",
-      "summary": "德国拟到2030年AI产值占GDP 10%，设立AI芯片与量子中心。",
-      "link": "https://www.reuters.com/technology/germany-plans-ai-offensive-catch-up-key-technologies-document-shows-2025-07-15/"
-    },
-    {
-      "title": "特朗普公布700亿美元AI+能源投资计划",
-      "summary": "特朗普在能源峰会提出700亿美元计划投资AI与化石能源领域。",
-      "link": "https://www.theguardian.com/us-news/2025/jul/15/trump-ai-oil-energy-summit"
-    },
-    {
-      "title": "Nvidia恢复对华销H20芯片 市场复苏",
-      "summary": "Nvidia获批恢复向中国出口H20 AI芯片，市值录升。",
-      "link": "https://nypost.com/2025/07/15/business/nvidia-ceo-jensen-huang-can-resume-ai-chip-sales-to-china-after-trump-meeting/"
-    },
-    {
-      "title": "市值波动但AI依旧 火热资本向AI涌入",
-      "summary": "美国AI初创今年融资激增75%，创历史第二高。",
-      "link": "https://www.reuters.com/technology/artificial-intelligence/"
+      "title": "百度文心大模型升级至4.0版本",
+      "summary": "百度宣布文心4.0大模型正式商用，推理速度提升40%。",
+      "link": "https://example.com/baidu-wenxin",
+      "locale": "domestic",
+      "time": "2025-07-18T08:45:00Z",
+      "image": "https://placehold.co/600x300?text=文心4.0"
     }
   ]
 }
