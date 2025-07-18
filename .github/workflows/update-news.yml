@@ -1,6 +1,7 @@
 name: Update AI News
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 1 * * *'   # Run at 09:00 CST
     - cron: '0 10 * * *'  # Run at 18:00 CST
