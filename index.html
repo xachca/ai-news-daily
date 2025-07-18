@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>AI科技头条速览</title>
 </head>
-<body style="font-family: sans-serif; padding: 2em; background: #f7f9fc;">
+<body>
   <h1>📰 AI科技头条速览</h1>
 
   <h2>🌐 国际新闻</h2>
@@ -14,15 +14,25 @@
   <ul id="cn-news"></ul>
 
   <script>
-    fetch("public/data/news.json")
-      .then(response => response.json())
+    fetch("./public/data/news.json")
+      .then(res => {
+        if (!res.ok) throw new Error("无法加载 news.json");
+        return res.json();
+      })
       .then(data => {
         const intlList = document.getElementById("intl-news");
         const cnList = document.getElementById("cn-news");
 
+        if (!Array.isArray(data) || data.length === 0) {
+          document.body.innerHTML += "<p style='color:red;'>❌ 没有新闻数据</p>";
+          return;
+        }
+
         data.forEach(article => {
           const li = document.createElement("li");
-          li.innerHTML = `<a href="${article.url}" target="_blank">${article.title}</a> <br><small>${article.published} | 来源: ${article.source}</small><br><p>${article.summary}</p><hr>`;
+          li.innerHTML = `<a href="${article.url}" target="_blank">${article.title}</a> 
+                          <br><small>${article.published} | 来源: ${article.source}</small>
+                          <p>${article.summary}</p><hr>`;
 
           if (article.source.includes("新浪") || article.source.includes("搜狐") || article.source.includes("澎湃")) {
             cnList.appendChild(li);
@@ -32,8 +42,10 @@
         });
       })
       .catch(err => {
-        document.body.innerHTML += `<p style="color:red;">❌ 新闻加载失败：${err.message}</p>`;
+        document.body.innerHTML += `<p style="color:red;">❌ 加载错误: ${err.message}</p>`;
+        console.error(err);
       });
   </script>
 </body>
 </html>
+
