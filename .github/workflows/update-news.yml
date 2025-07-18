@@ -31,6 +31,7 @@ jobs:
           git config --global user.email 'github-actions@github.com'
           git add public/data/news.json
           git commit -m "Auto-update AI news data" || echo "No changes to commit"
+          git pull --rebase
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
