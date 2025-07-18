@@ -1,52 +1,38 @@
-
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <title>AI科技头条速览</title>
-  <style>
-    body { font-family: sans-serif; padding: 20px; background: #f7fafd; }
-    h1 { color: #111; }
-    .section { margin-bottom: 40px; }
-    .news-item { margin: 10px 0; }
-    .news-item a { text-decoration: none; font-weight: bold; }
-    .news-item span { color: #888; font-size: 0.9em; margin-left: 8px; }
-  </style>
 </head>
-<body>
-  <h1>AI科技头条速览</h1>
-  <div class="section" id="international">
-    <h2>🌐 国际新闻</h2>
-  </div>
-  <div class="section" id="china">
-    <h2>🇨🇳 国内新闻</h2>
-  </div>
+<body style="font-family: sans-serif; padding: 2em; background: #f7f9fc;">
+  <h1>📰 AI科技头条速览</h1>
+
+  <h2>🌐 国际新闻</h2>
+  <ul id="intl-news"></ul>
+
+  <h2>🇨🇳 国内新闻</h2>
+  <ul id="cn-news"></ul>
 
   <script>
-    fetch('data/news.json')
-      .then(res => res.json())
+    fetch("public/data/news.json")
+      .then(response => response.json())
       .then(data => {
-        const intlContainer = document.getElementById('international');
-        const cnContainer = document.getElementById('china');
+        const intlList = document.getElementById("intl-news");
+        const cnList = document.getElementById("cn-news");
 
-        data.international.forEach(item => {
-          const div = document.createElement('div');
-          div.className = 'news-item';
-          div.innerHTML = `<a href="${item.url}" target="_blank">${item.title}</a>
-                           <span>${item.source} - ${item.time}</span>`;
-          intlContainer.appendChild(div);
-        });
+        data.forEach(article => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${article.url}" target="_blank">${article.title}</a> <br><small>${article.published} | 来源: ${article.source}</small><br><p>${article.summary}</p><hr>`;
 
-        data.china.forEach(item => {
-          const div = document.createElement('div');
-          div.className = 'news-item';
-          div.innerHTML = `<a href="${item.url}" target="_blank">${item.title}</a>
-                           <span>${item.source} - ${item.time}</span>`;
-          cnContainer.appendChild(div);
+          if (article.source.includes("新浪") || article.source.includes("搜狐") || article.source.includes("澎湃")) {
+            cnList.appendChild(li);
+          } else {
+            intlList.appendChild(li);
+          }
         });
       })
       .catch(err => {
-        console.error('新闻加载失败:', err);
+        document.body.innerHTML += `<p style="color:red;">❌ 新闻加载失败：${err.message}</p>`;
       });
   </script>
 </body>
