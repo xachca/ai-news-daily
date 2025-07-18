@@ -1,80 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>AI科技头条速览</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f9fb;
-      padding: 40px;
-      max-width: 960px;
-      margin: auto;
-    }
-    h2 {
-      color: #444;
-      margin-top: 40px;
-    }
-    .news-card {
-      background: #fff;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 6px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .news-card a {
-      text-decoration: none;
-      color: #1a0dab;
-      font-weight: bold;
-      display: block;
-      margin-top: 6px;
-    }
-    .news-card .desc {
-      color: #555;
-      margin-top: 5px;
-    }
-    .time {
-      font-size: 12px;
-      color: #888;
-      margin-top: 5px;
-    }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f3f6f9; }
+    h1 { font-size: 28px; }
+    .section { margin-top: 20px; }
+    .card { background: #fff; border-radius: 6px; padding: 15px; margin: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .time { color: #888; font-size: 12px; }
+    .summary { margin: 10px 0; }
+    a { color: #1a73e8; font-weight: bold; text-decoration: none; }
   </style>
 </head>
 <body>
   <h1>AI科技头条速览</h1>
-
-  <h2>🌐 国际新闻</h2>
-  <div id="intl-news"></div>
-
-  <h2>🇨🇳 国内新闻</h2>
-  <div id="china-news"></div>
+  <div id="intl" class="section"><h2>🌐 国际新闻</h2></div>
+  <div id="china" class="section"><h2>🇨🇳 国内新闻</h2></div>
 
   <script>
     fetch('./public/data/news.json')
-      .then(response => response.json())
+      .then(res => res.json())
       .then(data => {
-        const intl = document.getElementById('intl-news');
-        const china = document.getElementById('china-news');
-
-        data.intl.slice(0, 10).forEach(item => {
-          intl.innerHTML += `
-            <div class="news-card">
-              <div class="time">${item.date}</div>
-              <div class="desc">${item.summary}</div>
-              <a href="${item.url}" target="_blank">${item.title}</a>
-            </div>
-          `;
-        });
-
-        data.china.slice(0, 10).forEach(item => {
-          china.innerHTML += `
-            <div class="news-card">
-              <div class="time">${item.date}</div>
-              <div class="desc">${item.summary}</div>
-              <a href="${item.url}" target="_blank">${item.title}</a>
-            </div>
-          `;
-        });
+        const render = (news, container) => {
+          document.getElementById(container).innerHTML +=
+            news.map(item => \`
+              <div class="card">
+                <div class="time">\${item.date}</div>
+                <div class="summary">\${item.summary}</div>
+                <a href="\${item.url}" target="_blank">\${item.title}</a>
+              </div>
+            \`).join('');
+        };
+        render(data.intl, 'intl');
+        render(data.china, 'china');
       });
   </script>
 </body>
