@@ -1,65 +1,16 @@
-{
-  "intl": [
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "US passes first major national crypto legislation",
-      "summary": "It marks a milestone for the once fringe industry,…",
-      "url": "https://www.bbc.com/news/articles/cd78lvd94zyo"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "Netflix uses AI effects for first time to cut costs",
-      "summary": "The streaming firm says AI allowed The Eternauts t…",
-      "url": "https://www.bbc.com/news/articles/c9vr4rymlw9o"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "Meta investors settle $8bn lawsuit with Zuckerberg over Facebook privacy",
-      "summary": "Shareholders accused Meta leaders of damaging the …",
-      "url": "https://www.bbc.com/news/articles/cx2jmledvr3o"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "Does the UK video games industry have a class problem?",
-      "summary": "A non-profit organisation is trying to create more…",
-      "url": "https://www.bbc.com/news/articles/cvg9jeg2nxgo"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "Samsung boss cleared of fraud by South Korea's top court",
-      "summary": "The ruling comes after Lee Jae-yong was acquitted …",
-      "url": "https://www.bbc.com/news/articles/ckgj04nw19zo"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "Apple sues leaker Jon Prosser for stealing iOS secrets",
-      "summary": "Apple has sued the well-known leaker Jon Prosser f…",
-      "url": "https://www.theverge.com/news/709550/apple-jon-prosser-lawsuit-michael-ramacciotti-ios-26-trade-secrets"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "Nintendo wants you to join its next mysterious Switch Online playtest",
-      "summary": "Late last year, Nintendo hosted a mysterious Switc…",
-      "url": "https://www.theverge.com/news/709530/nintendo-switch-online-playtest-program-july-august-invitations-application"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "Subaru’s new Uncharted EV looks like an undercover Toyota C-HR",
-      "summary": "Subaru doesn’t have the deepest bench when it come…",
-      "url": "https://www.theverge.com/news/709117/subaru-uncharted-ev-specs-toyota"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "The crypto industry got what it paid for",
-      "summary": "The crypto industry is beginning to see a return o…",
-      "url": "https://www.theverge.com/politics/709483/crypto-week-genius-clarity-act-trump"
-    },
-    {
-      "date": "2025/07/18 10:21:46",
-      "title": "Here are the best Apple Watch deals available right now",
-      "summary": "In September, Apple launched its latest smartwatch…",
-      "url": "https://www.theverge.com/21289209/best-apple-watch-deals"
-    }
-  ],
-  "china": []
-}
+[
+  {
+    "title": "OpenAI 发布全新 GPT 模型",
+    "url": "https://example.com/openai-gpt-news",
+    "source": "OpenAI Blog",
+    "published": "2025-07-18T11:32:11.275637",
+    "summary": "摘要：OpenAI 发布全新 GPT 模型"
+  },
+  {
+    "title": "Google DeepMind 最新 AI 成果发布",
+    "url": "https://example.com/deepmind-ai-news",
+    "source": "Google Research",
+    "published": "2025-07-18T11:32:11.275647",
+    "summary": "摘要：Google DeepMind 最新 AI 成果发布"
+  }
+]
