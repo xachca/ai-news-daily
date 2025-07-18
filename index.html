@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>AI科技头条速览</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f6f8fa; }
+        h1 { color: #000; }
+        h2 { margin-top: 30px; }
+        ul { list-style: none; padding-left: 0; }
+        li { margin: 10px 0; }
+        a { text-decoration: none; color: #0366d6; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>AI科技头条速览</h1>
+    <h2>🌐 国际新闻</h2>
+    <ul id="international-news"></ul>
+    <h2>🇨🇳 国内新闻</h2>
+    <ul id="china-news"></ul>
+
+    <script>
+        fetch('./data/news.json')
+            .then(response => response.json())
+            .then(data => {
+                const international = document.getElementById('international-news');
+                data.international.forEach(news => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${news.url}" target="_blank">${news.title}</a>`;
+                    international.appendChild(li);
+                });
+
+                const china = document.getElementById('china-news');
+                data.china.forEach(news => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<a href="${news.url}" target="_blank">${news.title}</a>`;
+                    china.appendChild(li);
+                });
+            })
+            .catch(error => {
+                console.error("加载新闻数据失败：", error);
+            });
+    </script>
+</body>
+</html>
