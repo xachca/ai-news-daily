@@ -1,142 +1,16 @@
 [
   {
-    "title": "International AI News #5",
-    "url": "https://example.com/international-news-5",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.474012",
-    "summary": "This is a summary of international AI news item 5."
+    "title": "OpenAI 发布全新 GPT 模型",
+    "url": "https://example.com/openai-gpt-news",
+    "source": "OpenAI Blog",
+    "published": "2025-07-19T02:43:26.830959",
+    "summary": "摘要：OpenAI 发布全新 GPT 模型"
   },
   {
-    "title": "国内AI新闻 #2",
-    "url": "https://example.cn/domestic-news-2",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474155",
-    "summary": "这是第 2 条国内AI新闻摘要。"
-  },
-  {
-    "title": "International AI News #4",
-    "url": "https://example.com/international-news-4",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.474007",
-    "summary": "This is a summary of international AI news item 4."
-  },
-  {
-    "title": "International AI News #10",
-    "url": "https://example.com/international-news-10",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.474044",
-    "summary": "This is a summary of international AI news item 10."
-  },
-  {
-    "title": "International AI News #1",
-    "url": "https://example.com/international-news-1",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.473983",
-    "summary": "This is a summary of international AI news item 1."
-  },
-  {
-    "title": "国内AI新闻 #9",
-    "url": "https://example.cn/domestic-news-9",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474174",
-    "summary": "这是第 9 条国内AI新闻摘要。"
-  },
-  {
-    "title": "国内AI新闻 #5",
-    "url": "https://example.cn/domestic-news-5",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474163",
-    "summary": "这是第 5 条国内AI新闻摘要。"
-  },
-  {
-    "title": "International AI News #2",
-    "url": "https://example.com/international-news-2",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.473998",
-    "summary": "This is a summary of international AI news item 2."
-  },
-  {
-    "title": "国内AI新闻 #4",
-    "url": "https://example.cn/domestic-news-4",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474160",
-    "summary": "这是第 4 条国内AI新闻摘要。"
-  },
-  {
-    "title": "国内AI新闻 #8",
-    "url": "https://example.cn/domestic-news-8",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474171",
-    "summary": "这是第 8 条国内AI新闻摘要。"
-  },
-  {
-    "title": "国内AI新闻 #6",
-    "url": "https://example.cn/domestic-news-6",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474165",
-    "summary": "这是第 6 条国内AI新闻摘要。"
-  },
-  {
-    "title": "国内AI新闻 #7",
-    "url": "https://example.cn/domestic-news-7",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474168",
-    "summary": "这是第 7 条国内AI新闻摘要。"
-  },
-  {
-    "title": "International AI News #9",
-    "url": "https://example.com/international-news-9",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.474040",
-    "summary": "This is a summary of international AI news item 9."
-  },
-  {
-    "title": "国内AI新闻 #3",
-    "url": "https://example.cn/domestic-news-3",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474157",
-    "summary": "这是第 3 条国内AI新闻摘要。"
-  },
-  {
-    "title": "国内AI新闻 #10",
-    "url": "https://example.cn/domestic-news-10",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474177",
-    "summary": "这是第 10 条国内AI新闻摘要。"
-  },
-  {
-    "title": "International AI News #8",
-    "url": "https://example.com/international-news-8",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.474027",
-    "summary": "This is a summary of international AI news item 8."
-  },
-  {
-    "title": "International AI News #6",
-    "url": "https://example.com/international-news-6",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.474016",
-    "summary": "This is a summary of international AI news item 6."
-  },
-  {
-    "title": "国内AI新闻 #1",
-    "url": "https://example.cn/domestic-news-1",
-    "source": "新华网",
-    "published": "2025-07-18T11:45:28.474151",
-    "summary": "这是第 1 条国内AI新闻摘要。"
-  },
-  {
-    "title": "International AI News #7",
-    "url": "https://example.com/international-news-7",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.474020",
-    "summary": "This is a summary of international AI news item 7."
-  },
-  {
-    "title": "International AI News #3",
-    "url": "https://example.com/international-news-3",
-    "source": "Reuters",
-    "published": "2025-07-18T11:45:28.474003",
-    "summary": "This is a summary of international AI news item 3."
+    "title": "Google DeepMind 最新 AI 成果发布",
+    "url": "https://example.com/deepmind-ai-news",
+    "source": "Google Research",
+    "published": "2025-07-19T02:43:26.830968",
+    "summary": "摘要：Google DeepMind 最新 AI 成果发布"
   }
 ]
